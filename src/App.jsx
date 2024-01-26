@@ -1,9 +1,15 @@
-import './App.css'
+import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import LoginPage from "./components/LoginPage";
+import SignUp from "./components/SIgnUp";
 
-export default function App(){
-  return(
+const App = () => {
+  return (
     <>
-      Hello
+      <SignUp />
+      <LoginPage />
     </>
-  )
-}
+  );
+};
+
+export default App;
